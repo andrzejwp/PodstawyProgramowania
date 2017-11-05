@@ -32,8 +32,8 @@ Korzystanie z kompilatora, etapy kompilacji
   - obejrzyj wynik: ``cat prog1.compiled``
   - uruchom kompilator + asembler: ``g++ -c prog1.cpp -o prog1.compiled-assembled``
   - obejrzyj wynik: ``cat prog1.compiled-assembled``
-  - obejrzyj lepiej: ``nm prog1.compiled-assembled``
-  - linker - uwaga, ścieżki są poprawne dla wersji gcc ``4.8.4``: ``ld -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o prog1 /usr/lib/x86_64-linux-gnu/crt1.o /usr/lib/x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/4.8.4/crtbegin.o prog1.compiled-assembled -L/usr/lib/gcc/x86_64-linux-gnu/4.8.4 -lstdc++ -lc /usr/lib/gcc/x86_64-linux-gnu/4.8.4/crtend.o /usr/lib/x86_64-linux-gnu/crtn.o``
+  - lepszy sposób badania pliku objektów - wylistuj symbole : ``nm prog1.compiled-assembled``
+  - aby stworzyć ostateczny plik wykonywalny - uruchom linker - uwaga, ścieżki są poprawne dla wersji gcc ``4.8.4``: ``ld -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o prog1 /usr/lib/x86_64-linux-gnu/crt1.o /usr/lib/x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/4.8.4/crtbegin.o prog1.compiled-assembled -L/usr/lib/gcc/x86_64-linux-gnu/4.8.4 -lstdc++ -lc /usr/lib/gcc/x86_64-linux-gnu/4.8.4/crtend.o /usr/lib/x86_64-linux-gnu/crtn.o``
 
 3. Napisz program, który będzie składał się z 3 plików:
  - main.cpp
@@ -41,9 +41,13 @@ Korzystanie z kompilatora, etapy kompilacji
  - funkcje.h
 
  Program main powinien korzystać z funkcji ``int dodaj(int,int)`` definiowanej w pliku źródłowym ``funkcje.cpp``.
- Skompiluj pliki ``main.cpp`` i ``funkcje.cpp`` osobno, niezależnie od siebie: ``g++ -c main.cpp -o main.o``, ``g++ -c funkcje.cpp -o funkcje.o``
+ Skompiluj pliki ``main.cpp`` i ``funkcje.cpp`` osobno, niezależnie od siebie: 
+ - ``g++ -c main.cpp -o main.o``, 
+ - ``g++ -c funkcje.cpp -o funkcje.o``
+
  Wykonaj polecenie ``nm funkcje.o`` oraz ``nm main.o`` aby sprawdzić jakie symbole
  eskportowane są przez poszczególne pliki ``.o``.
+
  Wykonaj operację linkowania obiektów ``main.o`` i ``funkcje.o``.
 
 4. Najczęstsze błędy
