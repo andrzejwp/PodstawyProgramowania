@@ -35,6 +35,8 @@ Korzystanie z kompilatora, etapy kompilacji
   - obejrzyj wynik: ``cat prog1.compiled-assembled``
   - lepszy sposób badania pliku objektów - wylistuj symbole : ``nm prog1.compiled-assembled``
   - aby stworzyć ostateczny plik wykonywalny - uruchom linker - uwaga, ścieżki są poprawne dla wersji gcc ``4.8.4``: ``ld -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o prog1 /usr/lib/x86_64-linux-gnu/crt1.o /usr/lib/x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/4.8.4/crtbegin.o prog1.compiled-assembled -L/usr/lib/gcc/x86_64-linux-gnu/4.8.4 -lstdc++ -lc /usr/lib/gcc/x86_64-linux-gnu/4.8.4/crtend.o /usr/lib/x86_64-linux-gnu/crtn.o``
+  - dla systemów 32-bitowych uruchomienie linkera będzie miało postać: ``ld -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o prog1 /usr/lib/x86_64-linux-gnu/crt1.o /usr/lib/x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/4.8.4/crtbegin.o prog1.compiled-assembled -L/usr/lib/gcc/x86_64-linux-gnu/4.8.4 -lstdc++ -lc /usr/lib/gcc/x86_64-linux-gnu/4.8.4/crtend.o /usr/lib/x86_64-linux-gnu/crtn.o``
+  - po poprawnym zlinkowaniu program powinien uruchomić się w ten sam sposób jak skompilowany na samym początku program a.out
 
 3. Napisz program, który będzie składał się z 3 plików:
  - main.cpp
