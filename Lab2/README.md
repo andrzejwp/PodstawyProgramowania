@@ -12,6 +12,7 @@ Korzystanie z kompilatora, etapy kompilacji
   ```
 
   g++ prog1.cpp
+
   ./a.out
 
 2. Uruchom manualnie kolejne etapy kompilacji:
