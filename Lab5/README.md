@@ -35,15 +35,21 @@ K - ilosc liczb całkowitych w kolejnych liniach
 n0...nk - kolejne liczby całkowite
 
 Format pliku WE:
+
+```
 K
 n0
 n1
 ...
 nk
+```
 
 Format pliku WY:
+
+```
 nk
 nk-1
 nk-2
 ...
 n0
+```
