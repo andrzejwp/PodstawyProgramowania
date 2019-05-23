@@ -38,3 +38,10 @@ void printPerson(person){
     }
 }
 ```
+
+Problemy:
+1. Przenalizować czytelność kodu źródłowego
+
+Ćwiczenia:
+1. Rozbudować program o obsługę klasy `Faculty`
+
