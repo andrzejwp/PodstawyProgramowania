@@ -89,3 +89,6 @@ Na finalne rozwiązanie problemu wskazuje jednak umieszczona w przykładzie lini
  // Co stanie się gdy wykonamy rzutowanie?
  cout << ((Student*)listOfPeople[3])->getForPrint() << endl;
 ```
+
+Ćwiczenie:
+1. Zaimplementuj metodę `getForPrint()` w klasach `Person`, `Student` i `Faculty` - potwierdź powyzsze rezultaty.
