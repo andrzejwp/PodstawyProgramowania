@@ -26,3 +26,4 @@
    cout << *wskLiczba << endl;
 
 ```
+4. Proszę przepisać, skompilować, uruchomić i przeanalizować program tabWsk.cpp
