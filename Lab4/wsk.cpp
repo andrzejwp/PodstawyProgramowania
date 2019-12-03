@@ -4,7 +4,7 @@ int main(){
 
 
    int liczba = 5;
-   int *wskLiczba;
+   int *wskLiczba = &liczba;
 
    cout << liczba << endl;
    cout << *wskLiczba << endl;
