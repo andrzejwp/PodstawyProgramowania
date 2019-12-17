@@ -31,6 +31,7 @@ Zadania
 
 2. Zawartość tablicy wczytanej w zad 1 zapisz do nowego pliku, w odwrotnej kolejności.
 
+
 K - ilosc liczb całkowitych w kolejnych liniach
 n0...nk - kolejne liczby całkowite
 
@@ -52,4 +53,13 @@ nk-1
 nk-2
 ...
 n0
+```
+
+
+
+3(\*). Rozbuduj program wczytujący / zapisujący dane do pliku o możliwość pracy z danymi wielowymiarowymi, tak aby każdy wiersz zapisany w pliku mógł składać się z kilku kolumn. Przykład:
+
+```
+123321  Janina  Kowalska    17-12-2019      obecna
+321123  Piotr   Nowak       17-12-2019      nieobecny
 ```
