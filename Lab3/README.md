@@ -78,7 +78,7 @@ a w pętli ``do...while`` - po.
 ```
 do{
   cout << number << endl;
-} while(number > 0)
+} while(number > 0);
 ```
 
 Pętla ``for``
