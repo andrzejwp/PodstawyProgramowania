@@ -26,7 +26,7 @@ int main () {
 Zadania
 =======
 
-1. Napisz funkcję wczytującą z pliku tekstowego o zadanym formacie (opisany poniżej) zbiór liczb.
+1. Napisz funkcję wczytującą z pliku tekstowego o zadanym formacie (opisany poniżej) zbiór liczb. Liczby proszę zapisać w tablicy, której rozmiar będzie równy ilości liczb zapisanych w pliku.
 
 2. Zawartość tablicy wczytanej w zad 1 zapisz do nowego pliku, w odwrotnej kolejności.
 
