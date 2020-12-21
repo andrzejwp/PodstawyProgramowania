@@ -3,7 +3,7 @@ Operacje wejścia/wyjścia
 
 Podstawowe operacje wejścia / wyjścia, które wykorzystywane były w poprzednich programach to drukowanie na tzw. "standardowe wyjście" (ang. *stdout*), przy pomocy ``cout`` oraz wczytywanie ze "standardowego wejścia" (ang. *stdin*), przy pomocy ``cin``.
 
-Korzystanie z danych zapisanych w pliku zlokalizowanym na dysku jest bardzo podobne, odbywa się w oparciu o strumienie plikowe - `ofstream` i `ifstream` (oba zadeklarowane w nagłówku `<fstream>`, które posiadają interfejs analogiczny jak ``cout`` / ``cin``.
+Korzystanie z danych zapisanych w pliku zlokalizowanym na dysku jest bardzo podobne, odbywa się w oparciu o strumienie plikowe - `ofstream` i `ifstream` (oba zadeklarowane w nagłówku `<fstream>`), które posiadają interfejs analogiczny jak ``cout`` / ``cin``.
 
 Poniżej przykładowy program zapisujący linię tekstu w pliku.
 
